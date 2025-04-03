@@ -1,0 +1,20 @@
+# Simulation
+simpy==4.0.2
+numpy==1.26.4
+pandas==2.2.1
+
+# Visualization
+pydeck==0.8.1b0  # Python bindings for deck.gl
+dash==2.14.2     # Web framework
+dash-deck # Integration between Dash and deck.gl
+jupyter-dash==0.4.2  # For development and testing
+
+# Development
+pytest==8.0.0    # For testing
+black==24.2.0    # Code formatting
+mypy==1.8.0      # Type checking
+pylint==3.0.3    # Code linting
+
+# Optional but useful
+ipython==8.22.0  # Enhanced interactive shell
+jupyter==1.0.0   # For notebook development 
