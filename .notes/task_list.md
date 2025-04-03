@@ -4,48 +4,48 @@ This file tracks ongoing work, priorities, and notes. Update regularly as tasks 
 
 ---
 
-## High Priority (In Progress / Immediate Attention)
+## Phase 1: Minimal Test Network (Current Focus)
 1. **Set up Simpy skeleton**  
    - **Status**: Not started  
-   - **Notes**: Create environment, initialize AAVs, and define basic processes (flight, dispatch).
+   - **Notes**: Create environment with 2 skyports and 1 AAV. Define basic flight process between skyports.
 
-2. **Integrate deck.gl visualization**  
+2. **Basic Visualization Setup**  
    - **Status**: Not started  
-   - **Notes**: Decide on front-end framework (Dash vs. Streamlit) and test with a simple map.
+   - **Notes**: Set up deck.gl with a simple map showing 2 skyports and vehicle movement.
 
-3. **Skyport & AAV Altitude Logic**  
+3. **Core Trip Logic**  
    - **Status**: Not started  
-   - **Notes**: Add `elevation_m` for Skyports and `altitude_m` for AAVs. Implement flight profile transitions (takeoff, cruise, landing).
+   - **Notes**: Implement basic flight dynamics (takeoff, cruise, landing) for single vehicle.
 
 ---
 
-## Medium Priority
-1. **Real-Time Parameter Updates**  
+## Phase 2: Core Features (Next Steps)
+1. **Multiple AAV Support**  
    - **Status**: Planned  
-   - **Notes**: Build a config object or dictionary that the front end can adjust without restarting the simulation.
+   - **Notes**: Extend simulation to handle multiple vehicles with basic collision avoidance.
 
-2. **Battery Range & Charging Model**  
+2. **Basic Dispatch System**  
    - **Status**: Planned  
-   - **Notes**: Hook in the Breguet range equation or stage-based consumption logic. Factor in charging times at Skyports.
+   - **Notes**: Implement simple dispatch logic for multiple vehicles.
 
-3. **Analytics & Logging**  
+3. **Rider Request System**  
    - **Status**: Planned  
-   - **Notes**: Decide what stats to track (unfulfilled requests, average wait time, load factor, etc.) and how to display them in the UI.
+   - **Notes**: Add basic rider request generation and fulfillment.
 
 ---
 
-## Low Priority
-1. **Optimization Framework**  
+## Phase 3: Advanced Features (Future)
+1. **Battery & Charging Model**  
    - **Status**: Future  
-   - **Notes**: Possibly integrate a load-factor optimization engine or a solver to minimize unfulfilled requests or cost.
+   - **Notes**: Implement battery consumption and charging at skyports.
 
-2. **Advanced Routing (Beyond Haversine)**  
+2. **Analytics Dashboard**  
    - **Status**: Future  
-   - **Notes**: Replace simplified straight-line logic with a more complex route finding method, once the rest is stable.
+   - **Notes**: Build comprehensive analytics for network performance.
 
-3. **Documentation & Testing**  
-   - **Status**: Ongoing  
-   - **Notes**: Expand docstrings, write end-to-end tests. Might be escalated to Medium Priority as the project grows.
+3. **Optimization Framework**  
+   - **Status**: Future  
+   - **Notes**: Add load-factor optimization and advanced routing.
 
 ---
 

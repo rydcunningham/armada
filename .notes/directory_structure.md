@@ -32,6 +32,28 @@ armada/
 │   ├── deck_gl_layers.py   # Helpers for deck.gl layers & data transformations
 │   ├── callbacks.py        # Functions that handle user interactions
 │   └── ...
+├── analytics/
+│   ├── tests/
+│   │   ├── test_2_skyports_1_vehicle/    # First test scenario
+│   │   │   ├── raw/
+│   │   │   │   ├── trip_requests.jsonl   # Raw trip request data
+│   │   │   │   ├── vehicle_states.jsonl  # Raw vehicle state data
+│   │   │   │   └── skyport_ops.jsonl     # Raw skyport operation data
+│   │   │   └── processed/
+│   │   │       ├── trip_metrics.parquet  # Processed trip metrics
+│   │   │       ├── vehicle_metrics.parquet
+│   │   │       └── skyport_metrics.parquet
+│   │   ├── test_3_skyports_2_vehicles/   # Second test scenario
+│   │   │   ├── raw/
+│   │   │   └── processed/
+│   │   └── ...
+│   ├── processors/
+│   │   ├── trip_processor.py     # Process and aggregate trip data
+│   │   ├── vehicle_processor.py  # Process and aggregate vehicle data
+│   │   └── skyport_processor.py  # Process and aggregate skyport data
+│   └── utils/
+│       ├── time_utils.py         # Time-based data processing utilities
+│       └── aggregation.py        # Data aggregation functions
 ├── tests/
 │   ├── test_entities.py    # Unit tests for AAV, Rider, etc.
 │   ├── test_dispatch.py
